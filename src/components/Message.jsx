@@ -20,8 +20,8 @@ export default function Message() {
       </h1>
 
       <p className="text-lg sm:text-lg md:text-xl lg:text-2xl text-[#FFFAF3]/90">
-        一緒にいろんな場所へ行けて楽しかった！<br />
-        これからも一緒にたくさん思い出を作っていこうね😊
+        一緒にいろんな場所へ<br />行けて楽しかった！<br />
+        これからも一緒に<br />たくさん思い出を作っていこうね😊
       </p>
     </motion.div>
   );

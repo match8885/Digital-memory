@@ -21,21 +21,21 @@ export default function MemoryLayout({ image, title, date, children }) {
 
       {/* タイトル + 日付 */}
       <div className="text-center mb-6">
-        <h1 className="text-3xl font-bold text-pink-700 drop-shadow-sm">
+        <h1 className="text-3xl font-bold text-pink-700 drop-shadow-sm font-zen">
           {title}
         </h1>
         <p className="text-lg text-pink-500 mt-1">{date}</p>
       </div>
 
       {/* メッセージ部分 */}
-      <p className="text-center text-xl text-pink-600 leading-relaxed whitespace-pre-line mb-10 px-4">
+      <p className="text-center text-xl text-pink-600 leading-relaxed whitespace-pre-line mb-10 px-4 font-zen">
         {children}
       </p>
 
       {/* 戻るボタン */}
       <Link
         to="/"
-        className="mt-8 bg-orange-500 text-white px-6 py-2 rounded-full shadow-md"
+        className="mt-8 bg-orange-500 text-white px-6 py-2 rounded-full shadow-md font-zen"
       >
         ← ホームに戻る
       </Link>

@@ -27,7 +27,13 @@ export default function JapanMap() {
   };
 
   return (
-    <div className="relative w-[700px] h-[600px] bg-amber-50/70 rounded-2xl shadow-md p-4 flex justify-center items-center overflow-hidden backdrop-blur-sm">
+    <div className="relative w-[700px] h-[600px] bg-white/30 rounded-4xl shadow-md p-4 flex justify-center items-center overflow-hidden backdrop-blur-sm">
+    
+    {/* タイトル */}
+    <div className="absolute top-4 left-1/2 -translate-x-1/2 z-10 text-white text-2xl font-medium tracking-wide drop-shadow-lg font-zen">
+      行ったね、ここ。
+    </div>
+    
       <ComposableMap
         projection="geoMercator"
         projectionConfig={{
@@ -71,7 +77,7 @@ export default function JapanMap() {
         {locations.map(({ name, coordinates, link }) => (
           <Marker key={name} coordinates={coordinates}>
             <circle
-              r={6}
+              r={5}
               fill="#ff6b81"
               stroke="#fff"
               strokeWidth={2}
@@ -81,13 +87,13 @@ export default function JapanMap() {
                 setTimeout(() => navigate(link), 1000); // 少し遅れてページ遷移
               }}
             />
-            <text
+            {/* <text
               textAnchor="middle"
               y={-10}
-              style={{ fontFamily: "sans-serif", fill: "#333", fontSize: 10 }}
+              style={{ fontFamily: "sans-serif", fill: "#333", fontSize: 8 }}
             >
               {name}
-            </text>
+            </text> */}
           </Marker>
         ))}
       </ComposableMap>
@@ -106,7 +112,7 @@ export default function JapanMap() {
             }}
             exit={{ opacity: 0 }}
             transition={{ duration: 1.5, ease: "easeOut" }}
-            className="absolute text-pink-500 text-3xl pointer-events-none"
+            className="absolute text-sky-500 text-4xl pointer-events-none"
             style={{
               left: "50%",
               top: "50%",
