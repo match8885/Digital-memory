@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+@theme {
+  --font-zen: "Zen Maru Gothic", sans-serif;
+}
+
+/* 👇 ここにカスタムユーティリティを追記してください */
+@utilities {
+  .text-glow {
+    text-shadow:
+      0 0 6px rgba(255, 255, 255, 0.9),
+      0 0 12px rgba(255, 255, 255, 0.6),
+      0 0 20px rgba(255, 200, 230, 0.4);
+  }
+}

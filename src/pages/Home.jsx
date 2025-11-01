@@ -10,50 +10,38 @@ export default function Home() {
         className="
           flex flex-col items-center
           min-h-screen
-          relative
-          overflow-hidden
-          bg-gradient-to-br from-amber-50 via-stone-50 to-orange-100
+          relative overflow-hidden
+          bg-cover bg-center bg-no-repeat
         "
+        style={{
+          backgroundImage: "url('/images/kurage.jpg')",
+        }}
       >
-        {/* ふわっとした光レイヤー */}
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.6),transparent_70%)]" />
 
-        {/* メインコンテンツ */}
+        {/* うっすら暗くして見やすくするレイヤー（弱めに） */}
+        <div className="absolute inset-0 bg-black/30 backdrop-blur-[1px]" />
+
         <div className="relative z-10 flex flex-col items-center">
 
-          {/* ツーショット */}
           <motion.img
             src="/images/couple.jpg"
             alt="Two of us"
-            className="
-              w-120 h-80 object-cover rounded-3xl shadow-lg mt-16
-              brightness-105
-              contrast-90
-              saturate-110
-              [filter:sepia(8%)]
-            "
-            initial={{ opacity: 0, scale: 0.9 }}
+            className="w-120 h-80 object-cover rounded-2xl shadow-lg mt-16"
+            initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 2, ease: "easeOut" }}
+            transition={{ duration: 2.5, ease: "easeOut" }}
           />
 
-          {/* メッセージ */}
           <Message />
 
-          {/* 日本地図タイトル */}
-          <motion.div
-            className="mt-20 text-[28px] font-semibold text-[#8B5E3C] drop-shadow-sm select-none"
-            initial={{ opacity: 0, y: 18 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.4, ease: "easeOut" }}
-          >
+          <h2 className="mt-16 text-xl text-white/90 font-semibold tracking-wide">
             行ったね、ここ。
-          </motion.div>
+          </h2>
 
-          {/* 日本地図 */}
-          <div className="mt-20 w-full flex justify-center">
+          <div className="mt-10 w-full flex justify-center">
             <JapanMap />
           </div>
+
         </div>
       </div>
     </PageTransition>
