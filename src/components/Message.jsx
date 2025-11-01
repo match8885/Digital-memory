@@ -16,7 +16,7 @@ export default function Message() {
         瑞希ちゃん いつもありがとう！
       </h1>
 
-      <p className="text-lg opacity-80">
+      <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl opacity-80">
         一緒にいろんな場所へ行けて楽しかった！<br />
         これからも一緒にたくさん思い出を作っていこうね😊
       </p>
