@@ -1,25 +1,17 @@
+// src/components/Message.jsx
 import { motion } from "framer-motion";
 
 export default function Message() {
   return (
     <motion.div
-      className="
-        mt-14 text-center max-w-[85%]
-        text-orange-900
-        leading-relaxed
-      "
-      initial={{ opacity: 0, y: 15 }}
+      className="text-center text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-pink-500 mt-12 leading-relaxed drop-shadow-lg tracking-wide"
+      initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1.8, ease: "easeOut" }}
+      transition={{ delay: 1, duration: 1.5, ease: "easeOut" }}
     >
-      <h1 className="text-3xl font-semibold mb-4">
-        瑞希ちゃん いつもありがとう！
-      </h1>
-
-      <p className="text-lg opacity-80">
-        一緒にいろんな場所へ行けて楽しかった！<br />
-        これからも一緒にたくさん思い出を作っていこうね😊
-      </p>
+      瑞希ちゃんへ🌸<br />
+      これからも一緒にたくさん思い出を作っていこうね😊<br />
+      いつもありがとう！
     </motion.div>
   );
 }

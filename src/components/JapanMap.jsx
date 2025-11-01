@@ -27,7 +27,7 @@ export default function JapanMap() {
   };
 
   return (
-    <div className="relative w-[700px] h-[600px] bg-amber-50/70 rounded-2xl shadow-md p-4 flex justify-center items-center overflow-hidden backdrop-blur-sm">
+    <div className="relative w-[700px] h-[600px] bg-white rounded-2xl shadow-lg p-4 flex justify-center items-center overflow-hidden">
       <ComposableMap
         projection="geoMercator"
         projectionConfig={{
@@ -45,22 +45,8 @@ export default function JapanMap() {
                 key={geo.rsmKey}
                 geography={geo}
                 style={{
-                 default: {
-                   fill: "#E9DCC4",      // やさしいミルクベージュ
-                   stroke: "#B59B7A",    // 薄いブラウンの境界線
-                   strokeWidth: 0.7,
-                   outline: "none",
-                   transition: "300ms ease-out",
-                 },
-                 hover: {
-                   fill: "#F5E9D7",      // ほんのり明るく
-                   stroke: "#A78A68",
-                   cursor: "pointer",
-                 },
-                 pressed: {
-                   fill: "#DCC7AC",      // 押した時ふんわり濃く
-                   stroke: "#8A7358",
-                 },
+                  default: { fill: "#DFF6FF", stroke: "#6EA8FE", strokeWidth: 0.5 },
+                  hover: { fill: "#B8E8FC" },
                 }}
               />
             ))
