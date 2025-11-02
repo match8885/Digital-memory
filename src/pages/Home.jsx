@@ -26,7 +26,7 @@ export default function Home() {
           <motion.img
             src="/images/couple.jpg"
             alt="Two of us"
-            className="w-120 h-80 object-cover rounded-2xl shadow-lg mt-16"
+            className="w-full max-w-sm md:max-w-md lg:max-w-xl h-auto object-cover rounded-2xl shadow-lg mt-12"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 2.5, ease: "easeOut" }}
