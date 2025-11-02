@@ -9,6 +9,7 @@ const locations = [
   { name: "Hakone", coordinates: [139.1088, 35.2337], link: "/memory/Hakone" },
   { name: "Kinugawa", coordinates: [139.7158, 36.8238], link: "/memory/Kinugawa" },
   { name: "Yokohama", coordinates: [139.6379, 35.4436], link: "/memory/Yokohama" },
+  { name: "Yamanashi", coordinates: [138.8324, 35.4600], link: "/memory/Yamanashi" },
 ];
 
 export default function JapanMap() {

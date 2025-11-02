@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import MemoryHakone from "./pages/MemoryHakone";
 import MemoryKinugawa from "./pages/MemoryKinugawa";
 import MemoryYokohama from "./pages/MemoryYokohama";
+import MemoryYamanashi from "./pages/MemoryYamanashi";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -16,6 +17,7 @@ function AnimatedRoutes() {
         <Route path="/memory/hakone" element={<MemoryHakone />} />
         <Route path="/memory/kinugawa" element={<MemoryKinugawa />} />
         <Route path="/memory/yokohama" element={<MemoryYokohama />} />
+        <Route path="/memory/yamanashi" element={<MemoryYamanashi />} />
       </Routes>
     </AnimatePresence>
   );
