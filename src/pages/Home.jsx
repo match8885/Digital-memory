@@ -34,14 +34,9 @@ export default function Home() {
 
           <Message />
 
-          {/* <h2 className="mt-16 text-xl text-white/90 font-semibold tracking-wide"/>
-            行ったね、ここ。
-          </h2> */}
-
           <div className="mt-10 w-full flex justify-center">
             <JapanMap />
           </div>
-
         </div>
       </div>
     </PageTransition>

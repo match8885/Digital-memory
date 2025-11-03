@@ -78,7 +78,7 @@ export default function JapanMap() {
         {locations.map(({ name, coordinates, link }) => (
           <Marker key={name} coordinates={coordinates}>
             <circle
-              r={5}
+              r={4}
               fill="#ff6b81"
               stroke="#fff"
               strokeWidth={2}
@@ -88,6 +88,7 @@ export default function JapanMap() {
                 setTimeout(() => navigate(link), 1000); // 少し遅れてページ遷移
               }}
             />
+            
             {/* <text
               textAnchor="middle"
               y={-10}
@@ -95,6 +96,7 @@ export default function JapanMap() {
             >
               {name}
             </text> */}
+            
           </Marker>
         ))}
       </ComposableMap>

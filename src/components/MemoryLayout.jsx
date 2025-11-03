@@ -37,7 +37,7 @@ export default function MemoryLayout({ image, title, date, children }) {
         to="/"
         className="mt-8 bg-orange-500 text-white px-6 py-2 rounded-full shadow-md font-zen"
       >
-        ← ホームに戻る
+        ホームに戻る
       </Link>
     </motion.div>
   );
